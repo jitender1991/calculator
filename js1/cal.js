@@ -4,9 +4,10 @@ $(document).ready(function(){
         displayResult(x);
     });
 });
-function displayResult(x){
+function displayResult(x) {
+    
     var id = eval(x);
     n=eval(id.value);
-    id.value=n;  
+    id.value=n;
 };
 
