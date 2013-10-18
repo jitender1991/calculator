@@ -19,6 +19,10 @@ $("#clear").on('click',function(){ init("clear"); });
 
 var s;
 
+
+
+
+
 function init(n){
     switch(n){
     case 0:
