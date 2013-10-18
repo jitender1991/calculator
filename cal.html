@@ -1,30 +1,52 @@
 <html>
     <head>
         <title>SIMPLE CALCULATOR</title>
+        <style>
+            div{
+                margin-left:400px;
+                background-color:blue;
+                width:130px;;
+                border:  solid black 5px;
+            }
+            input{
+                background-color:yellow;
+                border:1px solid red;
+            }
+            h4{
+                color:blue;
+                margin-left:400px;
+            }
+        </style>
         <script type="text/javascript" src="js1/jquery-2.0.3.js"></script>
         <script type="text/javascript" src='js1/cal.js'></script>
+        
     </head>
     <body>
-        <div id ="main container" >
-            <input type="text" id="screen"><br/>
-            <button id ="seven"> 7 </button>
-            <button id ="eight"> 8 </button>
-            <button id ="nine"> 9 </button>
-            <button id ="multiply" > * </button>
-            <br/>
-            <button id ="four"> 4 </button>
-            <button id ="five"> 5 </button>
-            <button id  ="six"> 6 </button>
-            <button id ="divide">/</button>
-            <br/>
-            <button id ="one"> 1 </button>
-            <button id ="two"> 2 </button>
-            <button id ="three"> 3 </button>
-            <button id ="add" > + </button><br/>
-            <button id ="zero"> 0 </button>
-            <button id ="clear"> clr </button>
-            <button id ="equalTo"> = </button>
-            <button id ="subtract"> - </button>
-        </div>
+        <h4>SIMPLE CALCULATOR</h4>
+        <div>
+            <form name ="maincontainer" >
+                <input type="text" id ="textbox" name ="screen" ><br/>
+                <input type="button" value ="7" onclick='maincontainer.screen.value  += "7"'>
+                <input type="button" value ="8" onclick='maincontainer.screen.value  += "8"'> 
+                <input type="button" value ="9" onclick='maincontainer.screen.value  += "9"'> 
+                <input type="button" value ="*" onclick='maincontainer.screen.value  += "*"'>
+                <br/>
+                <input type="button" value ="4" onclick='maincontainer.screen.value  += "4"'>
+                <input type="button" value ="5" onclick='maincontainer.screen.value  += "5"'> 
+                <input type="button" value ="6" onclick='maincontainer.screen.value  += "6"'> 
+                <input type="button" value ="/" onclick='maincontainer.screen.value  += "/"'> 
+                <br/>
+                <input type="button" value ="1" onclick='maincontainer.screen.value  += "1"'>
+                <input type="button" value ="2" onclick='maincontainer.screen.value  += "2"'> 
+                <input type="button" value ="3" onclick='maincontainer.screen.value  += "3"'> 
+                <input type="button" value ="+" onclick='maincontainer.screen.value  += "+"'>
+                <br/>
+                <input type="button" value ="0" onclick='maincontainer.screen.value  += "0"'>
+                <input style="width:25px;" type="button" value ="." onclick='maincontainer.screen.value += "."'>
+                <input type="button" value ="=" data-ele = "textbox" id="equalTo">
+                <input type="button" value ="-" onclick='maincontainer.screen.value  += "-"'><br/>
+                <input style="width:25px;" "type="button" value ="clr" onclick='maincontainer.screen.value  = " "'>  
+            </form>
+        </div>    
     </body>
 </html>
